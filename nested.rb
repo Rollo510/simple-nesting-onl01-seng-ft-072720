@@ -61,12 +61,7 @@ def dennis_ritchies_language
 end
 
 def adding_matz
-  programmer_hash = [:yukihiro_matsumoto]
-  programmer_hash[:yukihiro_matsumoto] = [:known_for]
-  programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
-  programmer_hash[:yukihiro_matsumoto][:known_for] = [:languages]
-  programmer_hash[:yukihiro_matsumoto][:known_for][:languages] = ["LISP", "C"]
-  return programmer_hash
+
 
 	programmer_hash = 
  		{
@@ -83,7 +78,13 @@ def adding_matz
           :languages => ["C"]
         }
      }
-
+     
+  programmer_hash = [:yukihiro_matsumoto]
+  programmer_hash[:yukihiro_matsumoto] = [:known_for]
+  programmer_hash[:yukihiro_matsumoto][:known_for] = "Ruby"
+  programmer_hash[:yukihiro_matsumoto][:known_for] = [:languages]
+  programmer_hash[:yukihiro_matsumoto][:known_for][:languages] = ["LISP", "C"]
+  return programmer_hash
     
 end
 
